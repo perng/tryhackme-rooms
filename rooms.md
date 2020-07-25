@@ -92,8 +92,11 @@ echo "banana" > /dev/pts/<0 through 9>
 cat /dev/urandom > /dev/pts/<everyone except you> &  
 use social engineering wall  
 
-
-
+# social engineering wall:
+put this in a message.txt file
+`This is Irvin. We accidentally used the wrong machine; so we're going to restart this KoTH with the correct machine in order to ensure all teams get a chance. I'll put the correct link once the new machine gets up and running.`
+then do:
+`sudo wall message.txt`
 
 
 
