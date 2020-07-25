@@ -18,12 +18,14 @@ ramen:noodlesRTheBest (ssh)
 pasta:pastaisdynamic  
 sudo chmod -xs vim.basic  
 afterwards stuff  
-`while :  
+```
+while :  
 	do  
 		sudo pkill -9 -u food  
 		sudo pkill -9 -u bread  
 		sudo pkill -9 -u tryhackme  
-done  `
+done  
+```
 
 profit  
 
