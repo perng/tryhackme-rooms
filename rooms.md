@@ -1,6 +1,10 @@
 start up the in-browser machine  
-to run linPEAS, do:  
-curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS | sh  
+
+# useful commands
+find all admin commands:
+`find / -perm -u=s -type f 2>/dev/null`
+run linPEAS.sh(tool that finds potential privilege escalation points)
+`curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS | sh`  
 
 # notable places:  
 /dev/urandom - infinite stream of random characters(usually whitespace and non-ascii)  
