@@ -99,8 +99,11 @@ then do:
 `sudo wall message.txt`
 
 ## script to stay king:
-sudo echo "* * * * * echo Happygator > /root/king.txt" > /tmp/cron && sudo cp /tmp/cron /var/spool/cron/crontabs/root && sudo service cron restart
-
+```
+sudo crontab -e
+```
+when the editor pops up put this in and exit
+`* * * * * echo Happygator > /root/king.txt`
 
 
 
