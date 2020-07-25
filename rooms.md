@@ -98,7 +98,7 @@ afterwards stuff
 sudo chmod -sx /usr/lib/git-core/git
 ```
 
-# Fortune:  
+## Fortune:  
 Requires: fcrackzip  
   
 nc <BOX_IP> 3333  
