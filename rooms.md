@@ -79,6 +79,12 @@ chmod /bin/cp 000
 profit      
 
 
+
+## production:  
+navigate to `ftp://anonymous@<ip>:21`  
+download id_rsa and the flag, put the flag in  
+```
+
 # Fortune:
 Requires: fcrackzip
 
@@ -97,10 +103,7 @@ stuff to do:
 	Remove fortuna from /etc/sudoers and add another user that you have credentials for.
 
 
-## production:  
-navigate to `ftp://anonymous@<ip>:21`  
-download id_rsa and the flag, put the flag in  
-```
+
 chmod 600 id_rsa
 ssh -i id_rsa ashu@<ip>
 sudo su skidy
