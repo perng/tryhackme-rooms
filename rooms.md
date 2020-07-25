@@ -1,9 +1,9 @@
 start up the in-browser machine  
 
 # useful commands
-find all admin commands:
-`find / -perm -u=s -type f 2>/dev/null`
-run linPEAS.sh(tool that finds potential privilege escalation points)
+find all admin commands:  
+`find / -perm -u=s -type f 2>/dev/null`  
+run linPEAS.sh(tool that finds potential privilege escalation points)  
 `curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS | sh`  
 
 # notable places:  
