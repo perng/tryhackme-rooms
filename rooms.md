@@ -1,4 +1,4 @@
-start up the in-browser machine  
+start up the in-browser machine a few minutes before game starts. It takes time.
 
 # useful commands
 find all admin commands:
