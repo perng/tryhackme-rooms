@@ -119,7 +119,7 @@ stuff to do:
 sudo useradd technoblade(i typically use password neverdie)  
 sudo usermod -aG sudo technoblade  
 echo "banana" > /dev/pts/<0 through 9>  
-cat /dev/urandom > /dev/pts/<everyone except you> & 
+cat /dev/urandom > /dev/pts/<everyone except you> &   
 use social engineering wall  
 
 ## social engineering wall:
