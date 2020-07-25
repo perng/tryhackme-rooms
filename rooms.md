@@ -102,7 +102,7 @@ then do:
 ```
 sudo crontab -e
 ```
-when the editor pops up put this in and exit
+when the editor pops up put this in and exit  
 `* * * * * echo Happygator > /root/king.txt`
 
 
