@@ -21,6 +21,7 @@ find sudo commands
 
 # machines:
 ## food:  
+`telnet <IP> 46969`
 
 food:givemecookies (telnet or ssh)  
 ramen:noodlesRTheBest (ssh)  
