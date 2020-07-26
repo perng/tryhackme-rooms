@@ -1,7 +1,7 @@
 start up the in-browser machine a few minutes before game starts. It takes time.
 
 # useful commands
-find all admin commands:
+/usr/bin/find all admin commands:
 
 `find / -perm -u=s -type f 2>/dev/null`
 
